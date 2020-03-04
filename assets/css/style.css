@@ -136,6 +136,14 @@ nav ul li a {
     background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
 
+.whysecfloatright {
+    float: right;
+}
+
+.whysecfloatleft {
+    float: left;
+}
+
 
 /* Network page css */
 
@@ -219,14 +227,75 @@ nav ul li a {
 
 @media only screen and (max-width: 600px) {
     .why-image {
-        width: 90vw;
+        width: 80vw;
         height: auto;
     }
     .jengadescript {
-        font-size: 50px;
+        font-size: 30px;
         line-height: 100px;
     }
     .build {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .bigscreenonly {
+        display: none !important;
+    }
+    #ForeImg .container {
+        padding-top: 20%;
+    }
+    #ForeImg h3 {
+        padding-top: 5%;
+    }
+    h1 {
+        font-size: 30px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+    #apply {
+        padding-top: 10% !important;
+    }
+    #ForeImg {
+        height: 125vw !important;
+    }
+    #Jengasec,
+    #whysec,
+    #curri-sec {
+        padding: 50px 0px 50px 0px !important;
+    }
+    .jenga-icon {
+        width: 60vw !important;
+    }
+    .equalsign {
+        width: 30px !important;
+    }
+    .whysecfloatright {
+        float: none !important;
+    }
+    .whysecfloatleft {
+        float: none !important;
+    }
+    #whysec .row {
+        padding: 0px 0px 50px 0px !important;
+    }
+    #whysec h3 {
+        padding: 10px 0px 0px 0px !important;
+    }
+    .course-right {
+        padding: 0 !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    #curri-sec .row {
+        padding: 20px 0px 50px 0px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mobileonly {
+        display: none !important;
     }
 }

@@ -32,7 +32,7 @@
             color: black !important;
             font-weight: 600;
             padding: 0 20px !important;
-            font-size: 14px !important;
+            font-size: 18px !important;
         }
         
         nav ul li a:hover {
@@ -52,6 +52,13 @@
             font-size: 14px;
             font-weight: normal;
         }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
     </style>
 
 </head>
@@ -65,6 +72,12 @@
             <a class="navbar-brand" href="/">
                 <img src="assets/img/JENGA School Wordmark.jpg" alt="Jenga School" class="d-inline-block align-top logo">
             </a>
+            <a class="btn btn-primary mobileonly" href="">
+                Apply
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menubar"><i class="fas fa-bars"></i></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto pl-md-5">
                     <li class="nav-item active pl-md-5">
@@ -76,9 +89,10 @@
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-primary" href="">
+            <a class="btn btn-primary bigscreenonly" href="">
                 Apply
             </a>
+
         </div>
     </nav>
     <!-- End of Navbar -->
@@ -93,7 +107,7 @@
                 <h3 class="pt-md-3 pb-md-5 animated slideInUp">
                     12 months intensive program for qualified candidates
                 </h3>
-                <div class="pt-md-5">
+                <div class="pt-md-5" id="apply">
                     <a href="" class="btn btn-sm btn-primary" style="padding:5px 20px 5px 20px;">
                         <h5>
                             <b>Apply Now</b>
@@ -107,10 +121,10 @@
     <!-- End of Fore Image -->
 
     <!-- Jenga icon section -->
-    <section style="background: #f2e3f3;">
+    <section style="background: #f2e3f3;" id="Jengasec">
         <div class="container pb-md-5 pt-md-5">
             <div class="row col-md-12">
-                <div class="col-md-6">
+                <div class="col-md-6 text-sm-center">
                     <img class="jenga-icon" src="assets/img/JENGA School Head.png" alt="">
                 </div>
                 <div class="col-md-6">
@@ -129,55 +143,55 @@
     <!-- End of Jenga icon section -->
 
     <!-- Why Jenga Section -->
-    <section>
+    <section id="whysec">
         <div class="container pb-md-5 pt-md-5">
-            <div class="row pb-md-5">
-                <div class="col-md-7">
-                    <img class="rounded why-image" src="assets/img/middle-aged-black-female-teacher-smiling-in-PQEW7RS.jpg" alt="">
+            <div class="test row pb-md-5 container">
+                <div class=" col-md-7 col-sm-12 ">
+                    <img class="rounded why-image " src="assets/img/middle-aged-black-female-teacher-smiling-in-PQEW7RS.jpg " alt=" ">
                 </div>
-                <div class="col-md-5 pt-md-5 pb-md-5">
-                    <h3 class="whyheader pt-md-5">
+                <div class="col-md-5 col-sm-12 pt-md-5 pb-md-5 ">
+                    <h3 class="whyheader pt-md-5 ">
                         High Level PhD Instructors
                     </h3>
-                    <p class="pt-md-2">
+                    <p class="pt-md-2 ">
                         Our instructors have PhDs in AI and Machine Learning with many years of instructional experience in the field
                     </p>
-                    <a href="" class="btn btn-sm btn-primary" style="padding:5px 20px 5px 20px;">
+                    <a href=" " class="btn btn-sm btn-primary " style="padding:5px 20px 5px 20px; ">
                         <h5>
                             <b>Learn More</b>
                         </h5>
                     </a>
                 </div>
             </div>
-            <div class="col-md-7" style="float: right;">
-                <img class="rounded why-image" src="assets/img/tra-nguyen-TVSRWmnW8Us-unsplash.jpg" alt="">
+            <div class="col-md-7 col-sm-12 whysecfloatright ">
+                <img class="rounded why-image " src="assets/img/tra-nguyen-TVSRWmnW8Us-unsplash.jpg " alt=" ">
             </div>
-            <div class="col-md-5 pt-md-5" style="float: left;">
+            <div class="col-md-5 col-sm-12 pt-md-5 whysecfloatleft ">
 
-                <h3 class="whyheader pt-md-5">
+                <h3 class="whyheader pt-md-5 ">
                     Experienced T.A Model
                 </h3>
-                <p class="pt-md-2">
+                <p class="pt-md-2 ">
                     Our instructors have PhDs in AI and Machine Learning with many years of instructional experience in the field
                 </p>
 
             </div>
-            <div style="clear:both;">
+            <div style="clear:both; ">
 
             </div>
-            <div class="row pb-md-5 pt-md-5">
-                <div class="col-md-7">
-                    <img class="rounded why-image" src="assets/img/teacher-helping-high-school-students-with-PQYWAEH.jpg" alt="">
+            <div class="test row pb-md-5 pt-md-5 container ">
+                <div class="col-md-7 col-sm-12 ">
+                    <img class="rounded why-image " src="assets/img/teacher-helping-high-school-students-with-PQYWAEH.jpg " alt=" ">
                 </div>
-                <div class="col-md-5 pt-md-5 pb-md-5">
+                <div class="col-md-5 col-sm-12 pt-md-5 pb-md-5 ">
 
-                    <h3 class="whyheader pt-md-5">
+                    <h3 class="whyheader pt-md-5 ">
                         Inspiring Pool of Mentors
                     </h3>
-                    <p class="pt-md-2">
+                    <p class="pt-md-2 ">
                         We partner with industry practitioners to provide guidance on projects and shape students’ skills in light of the industry’s expectations
                     </p>
-                    <a href="" class="btn btn-sm btn-primary rounded" style="padding:5px 20px 5px 20px;">
+                    <a href=" " class="btn btn-sm btn-primary rounded " style="padding:5px 20px 5px 20px; ">
                         <h5>
                             <b>Learn More</b>
                         </h5>
@@ -185,20 +199,20 @@
                 </div>
             </div>
 
-            <div class="col-md-7" style="float: right;">
-                <img class="rounded why-image" src="assets/img/interracial-partnership-K9B58U4.jpg" alt="">
+            <div class="col-md-7 col-sm-12 whysecfloatright ">
+                <img class="rounded why-image " src="assets/img/interracial-partnership-K9B58U4.jpg " alt=" ">
             </div>
-            <div class="col-md-5 pt-md-5" style="float: left;">
+            <div class="col-md-5 col-sm-12 pt-md-5 whysecfloatleft ">
 
-                <h3 class="whyheader pt-md-5">
+                <h3 class="whyheader pt-md-5 ">
                     A Network of Partners
                 </h3>
-                <p class="pt-md-2">
+                <p class="pt-md-2 ">
                     We continuously develop partnerships with organizations with a need for Data science & AI talent
                 </p>
 
             </div>
-            <div style="clear:both;">
+            <div style="clear:both; ">
 
             </div>
 
@@ -208,69 +222,69 @@
     <!-- End of why Jenga Section -->
 
     <!-- Curriculum Section -->
-    <section style="background: #bb3c4a;">
-        <div class="container pb-md-5 pt-md-5">
-            <h1 class="text-center curricullum-header pt-md-5">
+    <section style="background: #bb3c4a;" id="curri-sec">
+        <div class="container pb-md-5 pt-md-5 ">
+            <h1 class="text-center curricullum-header pt-md-5 ">
                 Curriculum Designed By Both Academia <br> & Professionals Of The Industry
             </h1>
 
-            <h3 class="text-center pt-md-3" style="color: white;">
+            <h3 class="text-center pt-md-3 " style="color: white; ">
                 Tailored to create the most market relevant skills
             </h3>
-            <div class="row col-md-12 pt-md-3">
-                <div class="col-md-6">
-                    <p class="courses course-right">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Practical projects.
+            <div class="row col-md-12 pt-md-3 text-sm-center">
+                <div class="col-md-6 ">
+                    <p class="courses course-right ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Practical projects.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses text-md-left">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> AI in IoT.
+                <div class="col-md-6 ">
+                    <p class="courses text-md-left ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> AI in IoT.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses course-right">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Programming agent.
+                <div class="col-md-6 ">
+                    <p class="courses course-right ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Programming agent.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses text-md-left">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Database Systems.
+                <div class="col-md-6 ">
+                    <p class="courses text-md-left ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Database Systems.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses course-right">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Time series forecasting
+                <div class="col-md-6 ">
+                    <p class="courses course-right ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Time series forecasting
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses text-md-left">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Data visualization.
+                <div class="col-md-6 ">
+                    <p class="courses text-md-left ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Data visualization.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses course-right">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Advanced machine learning.
+                <div class="col-md-6 ">
+                    <p class="courses course-right ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Advanced machine learning.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses text-md-left">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Statistical methods for Data Science.
+                <div class="col-md-6 ">
+                    <p class="courses text-md-left ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Statistical methods for Data Science.
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses course-right">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Mathematics for Data Science
+                <div class="col-md-6 ">
+                    <p class="courses course-right ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Mathematics for Data Science
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <p class="courses text-md-left">
-                        <i class="fas fa-check-circle" style="color: #5b85c5;"></i> Machine learning algorithms & methodologies.
+                <div class="col-md-6 ">
+                    <p class="courses text-md-left ">
+                        <i class="fas fa-check-circle " style="color: #5b85c5; "></i> Machine learning algorithms & methodologies.
                     </p>
                 </div>
             </div>
-            <div class="pt-md-5 text-center">
-                <a href="" class="btn btn-sm btn-primary" style="padding:5px 20px 5px 20px;">
+            <div class="pt-md-5 text-center ">
+                <a href=" " class="btn btn-sm btn-primary " style="padding:5px 20px 5px 20px; ">
                     <h5>
                         <b>Apply Now</b>
                     </h5>
@@ -283,85 +297,85 @@
     <!-- End of Curriculum section -->
 
     <!-- Footer -->
-    <footer class="page-footer" style="background: #253031; color: white;">
+    <footer class="page-footer " style="background: #253031; color: white; ">
 
         <!-- Footer Links -->
-        <div class="container text-center text-md-left">
+        <div class="container text-center text-md-left ">
 
             <!-- Grid row -->
-            <div class="row">
+            <div class="row ">
 
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
+                <div class="col-md-3 mx-auto ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Company</h5>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li>
-                            <a href="#!">About <span class="ai-user"></span></a>
+                            <a href="#! ">About <span class="ai-user "></span></a>
                         </li>
                         <li>
-                            <a href="#!">Contact </a>
+                            <a href="#! ">Contact </a>
                         </li>
                         <li>
-                            <a href="#!">Terms & Conditions</a>
+                            <a href="#! ">Terms & Conditions</a>
                         </li>
                     </ul>
 
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 d-md-none ">
 
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
+                <div class="col-md-3 mx-auto ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Follow us</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Follow us</h5>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li>
-                            <a href="#!">Facebook </a>
+                            <a href="#! ">Facebook </a>
                         </li>
                         <li>
-                            <a href="#!">Twitter </a>
+                            <a href="#! ">Twitter </a>
                         </li>
                         <li>
-                            <a href="#!">Instagram</a>
+                            <a href="#! ">Instagram</a>
                         </li>
                     </ul>
 
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 d-md-none ">
 
                 <!-- Grid column -->
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4 mx-auto ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get in touch</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 ">Get in touch</h5>
 
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="email" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ok</button>
+                    <form class="form-inline my-2 my-lg-0 ">
+                        <input class="form-control mr-sm-2 " type="search " placeholder="email " aria-label="Search ">
+                        <button class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Ok</button>
                     </form>
 
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 d-md-none ">
 
                 <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
+                <div class="col-md-2 mx-auto ">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="visibility: hidden;">Links</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 " style="visibility: hidden; ">Links</h5>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li>
-                            <a href="#!">info@jengaschool.com</a>
+                            <a href="#! ">info@jengaschool.com</a>
                         </li>
                     </ul>
 
@@ -375,8 +389,8 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#"> Jenga School</a>
+        <div class="footer-copyright text-center py-3 ">© 2020 Copyright:
+            <a href="# "> Jenga School</a>
         </div>
         <!-- Copyright -->
 
@@ -384,9 +398,10 @@
     <!-- End of footer -->
     <!-- Javascript files -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js "></script>
+    <!-- <script src="assets/js/scripts.js"></script> -->
 </body>
 
 </html>
